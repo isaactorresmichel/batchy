@@ -1,0 +1,4 @@
+views:
+  class: '\Batchy\Services\TwigService'
+logger:
+  class: '\Batchy\Services\LoggerService'

@@ -1,0 +1,4 @@
+routes.index:
+  path: '/'
+  action: 'GET'
+  controller: '\Batchy\Controllers\MainController:main'
