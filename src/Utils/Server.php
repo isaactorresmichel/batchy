@@ -25,6 +25,14 @@ class Server
         return false;
     }
 
+    public static function parseMiddleware(App $app, $file_path)
+    {
+        $middleware = Yaml::parse(file_get_contents($file_path));
+        foreach ($middleware as $name => $info) {
+            $app->add($info['class']);
+        }
+    }
+
     public static function parseRoutes(App $app, $file_path)
     {
         $routes = Yaml::parse(file_get_contents($file_path));

@@ -1,0 +1,2 @@
+cors:
+  class: '\Batchy\Middleware\CorsMiddleware:allowCors'
